@@ -1,0 +1,9 @@
+{
+  "name": "reycube-arg",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Tienda online de ReyCube.Arg (speedcubes) con panel del equipo",
+  "engines": { "node": ">=20" },
+  "scripts": { "dev": "vercel dev" }
+}
