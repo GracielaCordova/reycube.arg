@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ReyCube.Arg · Tienda de cubos Rubik en Argentina</title>
+<meta name="description" content="Speedcubes GAN, MoYu y QiYi, lubricantes, timers y accesorios. Envíos a todo el país por Andreani o retiro en Parque Patricios.">
+<meta name="theme-color" content="#1f5bd6">
+<meta property="og:title" content="ReyCube.Arg · Cubos para ir más rápido">
+<meta property="og:description" content="Speedcubes magnéticos, ballcore y UV. Envíos a todo el país.">
+<meta property="og:image" content="/img/og-reycube.jpg">
+<link rel="icon" href="img/logo-96.png" type="image/png">
+<link rel="apple-touch-icon" href="img/logo-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="announce" id="announce" hidden></div>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#inicio" aria-label="ReyCube.Arg, inicio">
+      <img class="logo" src="img/logo-96.png" alt="" width="44" height="44">
+      <b>ReyCube<span>.Arg</span></b>
+    </a>
+    <nav class="links" aria-label="Secciones">
+      <a href="#tienda">Tienda</a><a href="#tips">Tips</a><a href="#campeonatos">Campeonatos</a><a href="#novedades">Novedades</a>
+    </nav>
+    <div class="top-actions">
+      <button class="admin-btn" id="adminBtn" type="button" aria-pressed="false" hidden>Panel</button>
+      <button class="cart-btn" id="topCart" type="button" aria-label="Abrir carrito"><span class="lbl-t">Carrito</span> <span class="n" id="topCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+  <div id="shopView">
+    <section class="wrap hero">
+      <div>
+        <h1 id="heroTitle">Cubos para ir <em>más rápido.</em></h1>
+        <p id="heroText">Speedcubes magnéticos, ballcore y UV de GAN, MoYu y QiYi, más lubricantes, timers y mats. Mirá el stock real y armá tu pedido en un minuto.</p>
+        <div class="pills" id="heroPills"><span>Envíos a todo el país por Andreani</span><span>Retiro en Parque Patricios</span><span>Stock real, actualizado</span></div>
+      </div>
+      <img class="hero-logo" src="img/logo-reycube.webp" alt="Logo de ReyCube" width="220" height="220">
+    </section>
+
+    <div class="wrap" id="tienda">
+      <div class="search"><input id="q" type="search" placeholder="Buscar: RS3M, Weilong, 4x4, lubricante…" aria-label="Buscar productos" autocomplete="off"></div>
+      <nav class="filters" id="filters" aria-label="Categorías"></nav>
+    </div>
+
+    <div class="wrap shop">
+      <section aria-labelledby="listTitle">
+        <div class="bar"><h2 id="listTitle">Todo el catálogo</h2><span id="listCount"></span></div>
+        <div class="grid" id="grid">
+          <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+        </div>
+      </section>
+      <div class="scrim" id="scrim"></div>
+      <aside class="cart" id="cart" aria-label="Carrito">
+        <div class="cart-h">
+          <h2 id="cartTitle">Tu carrito</h2>
+          <div style="display:flex;align-items:center;gap:6px"><span class="count" id="cartCount">0 productos</span><button class="close" id="closeCart" type="button" aria-label="Cerrar carrito">×</button></div>
+        </div>
+        <div id="cartBody"></div>
+      </aside>
+    </div>
+
+    <section class="guide wrap" id="tips">
+      <div class="eyebrow">Tips</div>
+      <h2 id="tipsTitle">Cuidá tu cubo y te dura años</h2>
+      <p class="lead" id="tipsLead">Lo básico que hacen los speedcubers para que el cubo gire igual que el primer día.</p>
+      <div class="tips" id="tipsList">
+        <article class="tip"><span class="tag">cada 1–2 meses</span><h3>Lubricá poco y bien</h3><p>Una o dos gotas de lubricante de silicona alcanzan. Más denso en el núcleo para controlar; más liviano en las piezas para velocidad. Girá un rato para repartirlo y limpiá el sobrante.</p></article>
+        <article class="tip"><span class="tag">primera semana</span><h3>Dale rodaje</h3><p>Muchos cubos se sienten duros o "rasposos" de fábrica. Después de unos 100 solves se asientan y quedan más suaves.</p></article>
+        <article class="tip"><span class="tag">con la herramienta</span><h3>Ajustá tensión y compresión</h3><p>Si salta una pieza o hay corner twist, subí un punto la tensión. Si se traba, bajala. Cambiá de a un nivel y todas las caras iguales.</p></article>
+        <article class="tip"><span class="tag">sin agua en los imanes</span><h3>Limpiá en seco</h3><p>Paño seco o apenas húmedo por fuera. Si lo desarmás, no mojes las piezas con imanes y secá todo antes de armarlo.</p></article>
+        <article class="tip"><span class="tag">siempre</span><h3>Lejos del sol y del calor</h3><p>El calor deforma el plástico y opaca el acabado UV. Guardalo en su caja o bolsita, nunca en el auto ni al sol.</p></article>
+        <article class="tip"><span class="tag">si pasa</span><h3>Pieza que saltó</h3><p>Girá la capa 45°, encastrá la pieza con cuidado y, si se repite, subí la tensión. No fuerces: el núcleo es lo más delicado.</p></article>
+      </div>
+
+    </section>
+
+    <section class="guide wrap" id="elegir">
+      <div class="eyebrow">Guía</div>
+      <h2 id="chooserTitle">¿Qué cubo elijo?</h2>
+      <p class="lead" id="chooserLead">Según tu tiempo promedio en el 3x3. Tocá un cubo para ver su ficha.</p>
+      <div class="chooser" id="chooser"></div>
+    </section>
+
+    <section class="guide wrap" id="campeonatos">
+      <div class="eyebrow">Campeonatos</div>
+      <h2>Competí en un torneo oficial WCA</h2>
+      <div class="wca">
+        <div>
+          <p class="lead">La World Cube Association organiza los torneos oficiales en todo el mundo, y en Argentina hay competencias durante todo el año. Cualquiera puede anotarse: no hace falta ser rápido para ir.</p>
+          <div class="lbl">Eventos oficiales</div>
+          <div class="events"><span>3x3</span><span>2x2</span><span>4x4</span><span>5x5</span><span>6x6</span><span>7x7</span><span>3x3 a una mano</span><span>3x3 a ciegas</span><span>Pyraminx</span><span>Skewb</span><span>Megaminx</span><span>Square-1</span><span>Clock</span><span>FMC</span></div>
+          <ol class="steps">
+            <li>Creá tu cuenta gratis en la web de la WCA.</li>
+            <li>Buscá competencias en Argentina y anotate antes de que se llene el cupo.</li>
+            <li>Llevá tus cubos, revisá que tengan los colores estándar y practicá con timer.</li>
+            <li>El día del torneo hacés tus solves con jueces y queda tu ranking oficial.</li>
+          </ol>
+          <p style="margin-top:16px"><a class="btn" href="https://www.worldcubeassociation.org/competitions?region=Argentina" target="_blank" rel="noopener">Ver competencias en Argentina</a></p>
+        </div>
+        <div class="ao5">
+          <div class="lbl">Cómo se calcula tu resultado (Ao5)</div>
+          <div class="times"><span>14.21</span><s>11.87</s><span>13.05</span><s>16.90</s><span>12.64</span></div>
+          <p style="margin:0;color:var(--muted);font-size:15px">En la mayoría de los eventos hacés 5 solves. Se descartan el mejor y el peor, y se promedian los 3 del medio. Acá: <b class="price" style="font-size:16px">13.30</b></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide wrap" id="novedades">
+      <div class="news">
+        <div>
+          <div class="eyebrow" style="color:var(--sol)">Novedades</div>
+          <h2 id="newsTitle">Enterate primero de los cubos nuevos</h2>
+          <p id="newsText">Ingresos, reposiciones, torneos y tips. Seguinos en Instagram o pedinos que te avisemos por mail.</p>
+        </div>
+        <div class="btns">
+          <a class="btn" href="https://www.instagram.com/reycubearg/" target="_blank" rel="noopener">Seguir @reycubearg</a>
+          <button class="btn sec" type="button" id="newsBtn">Avisame por mail</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="adminView" class="wrap admin" hidden></div>
+</main>
+
+<div class="pv-note" id="pvNote" hidden><span>Estás viendo los cambios <b>sin guardar</b>.</span><button class="btn" type="button" id="pvBack">Volver al panel</button></div>
+
+<button class="fab" id="fab" type="button" hidden><span id="fabTxt">Ver carrito</span><span class="p" id="fabTotal"></span></button>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>ReyCube.Arg</h3>
+        <p>Tienda de cubos Rubik en Argentina.</p>
+        <p>Instagram <a href="https://www.instagram.com/reycubearg/" target="_blank" rel="noopener">@reycubearg</a></p>
+        <p>Mail <span class="mono-sel" id="footMail">reycubearg@gmail.com</span></p>
+        <button class="team-link" type="button" id="teamBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Acceso equipo</button>
+      </div>
+      <div>
+        <h3>Ayuda</h3>
+        <button class="lnk arrep" type="button" data-open="arrep">Botón de arrepentimiento</button>
+        <button class="lnk" type="button" data-open="terms">Términos y condiciones</button>
+        <button class="lnk" type="button" data-open="privacy">Política de privacidad</button>
+        <button class="lnk" type="button" data-open="ship">Envíos y cambios</button>
+      </div>
+      <div>
+        <h3>Envíos</h3>
+        <p>A todo el país por Andreani.</p>
+        <p>Retiro sin costo en Parque Patricios (CABA).</p>
+      </div>
+    </div>
+    <p class="legal-note" id="legalNote"></p>
+    <div class="made-by">
+      <span>Made by</span>
+      <span class="nodo"><img src="img/nodo-studio.png" alt="" width="18" height="18"><b>Nodo Studio</b></span>
+    </div>
+  </div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlgTitle"><div class="dlg-h"><h2 id="dlgTitle"></h2><button class="dlg-x" type="button" id="dlgX" aria-label="Cerrar">×</button></div><div class="dlg-b" id="dlgBody"></div></dialog>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
